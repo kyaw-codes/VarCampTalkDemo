@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19455" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="09b-So-nVK">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19454"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Tab Bar Controller-->
+        <scene sceneID="j27-Ma-qBG">
+            <objects>
+                <tabBarController id="09b-So-nVK" sceneMemberID="viewController">
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="Kne-KZ-Qry">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="49"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="j0B-Bv-r1I" kind="relationship" relationship="viewControllers" id="4gO-Na-c0d"/>
+                        <segue destination="IvY-PF-A9b" kind="relationship" relationship="viewControllers" id="uXG-hQ-GiM"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="rYJ-lP-VTe" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-903" y="299"/>
+        </scene>
+        <!--Welcome-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="HomeViewController" customModule="VarCampTalk" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="mm_varcamp" translatesAutoresizingMaskIntoConstraints="NO" id="T3s-f5-QLF">
+                                <rect key="frame" x="20.5" y="259.5" width="373" height="377"/>
+                            </imageView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="T3s-f5-QLF" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="41l-xr-ySB"/>
+                            <constraint firstItem="T3s-f5-QLF" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" multiplier="0.9" id="Kzb-O9-JXh"/>
+                            <constraint firstItem="T3s-f5-QLF" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="hHa-Mh-Kd7"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Welcome" id="xZQ-lW-gUO"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="909" y="-85"/>
+        </scene>
+        <!--Kitty 😸-->
+        <scene sceneID="mX1-RK-h53">
+            <objects>
+                <viewController id="jes-82-J6w" customClass="KittyViewController" customModule="VarCampTalk" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="RfZ-Hu-7UN">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="o09-Zg-zom">
+                                <rect key="frame" x="16" y="168" width="382" height="627"/>
+                            </imageView>
+                            <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" style="large" translatesAutoresizingMaskIntoConstraints="NO" id="8V9-x2-kkZ">
+                                <rect key="frame" x="188.5" y="429.5" width="37" height="37"/>
+                                <color key="color" systemColor="systemOrangeColor"/>
+                            </activityIndicatorView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="Agj-9c-AIh"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="8V9-x2-kkZ" firstAttribute="centerX" secondItem="RfZ-Hu-7UN" secondAttribute="centerX" id="F5m-FR-L2p"/>
+                            <constraint firstItem="8V9-x2-kkZ" firstAttribute="centerY" secondItem="RfZ-Hu-7UN" secondAttribute="centerY" id="NbC-C3-Oq2"/>
+                            <constraint firstItem="Agj-9c-AIh" firstAttribute="trailing" secondItem="o09-Zg-zom" secondAttribute="trailing" constant="16" id="ZEB-rK-JZa"/>
+                            <constraint firstItem="o09-Zg-zom" firstAttribute="top" secondItem="Agj-9c-AIh" secondAttribute="top" constant="20" id="o1I-1S-0xM"/>
+                            <constraint firstItem="o09-Zg-zom" firstAttribute="leading" secondItem="Agj-9c-AIh" secondAttribute="leading" constant="16" id="os3-6a-Xcw"/>
+                            <constraint firstItem="o09-Zg-zom" firstAttribute="height" secondItem="RfZ-Hu-7UN" secondAttribute="height" multiplier="0.7" id="z7E-by-l63"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Kitty 😸" id="uSw-Jq-68n">
+                        <barButtonItem key="rightBarButtonItem" title="Reload" image="square.and.arrow.down.fill" catalog="system" id="OXB-MG-udr">
+                            <connections>
+                                <action selector="handleDownloadTapped:" destination="jes-82-J6w" id="a4x-cl-8Dd"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="imageView" destination="o09-Zg-zom" id="g0a-gJ-R2W"/>
+                        <outlet property="spinner" destination="8V9-x2-kkZ" id="kOi-dN-SxC"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ako-OZ-3P0" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="887" y="589"/>
+        </scene>
+        <!--Home-->
+        <scene sceneID="TaI-z5-jEZ">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="j0B-Bv-r1I" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Home" image="house.fill" catalog="system" id="i9D-Ep-Ybs"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" largeTitles="YES" id="Nht-11-FfQ">
+                        <rect key="frame" x="0.0" y="44" width="414" height="96"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="i1C-Vy-xgH"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="oA6-lJ-IOk" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="90" y="-85"/>
+        </scene>
+        <!--Kitty-->
+        <scene sceneID="cpa-Oi-11B">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="IvY-PF-A9b" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Kitty" image="heart.fill" catalog="system" id="CI4-jV-Sf6"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" largeTitles="YES" id="cQH-qH-nxk">
+                        <rect key="frame" x="0.0" y="44" width="414" height="96"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="jes-82-J6w" kind="relationship" relationship="rootViewController" id="YhH-RH-brA"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="2r0-DC-IEa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="90" y="589"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="heart.fill" catalog="system" width="128" height="109"/>
+        <image name="house.fill" catalog="system" width="128" height="106"/>
+        <image name="mm_varcamp" width="661" height="377"/>
+        <image name="square.and.arrow.down.fill" catalog="system" width="121" height="128"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemOrangeColor">
+            <color red="1" green="0.58431372549019611" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
