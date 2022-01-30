@@ -14,27 +14,7 @@ class HomeViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        Task {
-            let ids = (1 ... 7).map { $0 }
-            var languages: [Int: String] = [:]
-            
-            try await withThrowingTaskGroup(of: (Int, String).self) { group in
-                for id in ids {
-                    group.addTask {
-                        return (id, try await self.languageManager.fetchLanguage(of: id))
-                    }
-                }
-                
-                for try await (id, language) in group {
-                    languages[id] = language
-                }
-                
-                dump(languages)
-            }
-        }
     }
-
-    
 
 }
 
