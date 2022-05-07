@@ -14,6 +14,8 @@ class HomeViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        print("Hello, welcome from VarCamp Talk!")
     }
 
 }
